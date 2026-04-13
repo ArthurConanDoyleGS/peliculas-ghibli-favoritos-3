@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Películas Ghibli III - Favoritos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <h1>Películas Ghibli III - Favoritos</h1>
+    <p class="intro">
+      Explora el catálogo de películas, busca por título y guarda tus favoritas.
+    </p>
+
+    <div class="buscador-contenedor">
+      <label for="buscador" class="sr-only">Buscar película por título</label>
+      <input
+        type="text"
+        id="buscador"
+        placeholder="Buscar película por título..."
+        aria-label="Buscar película por título"
+      >
+    </div>
+  </header>
+
+  <main class="contenedor-principal">
+    <section class="bloque bloque-resultados">
+      <div class="titulo-seccion">
+        <h2>Resultados</h2>
+        <p>Películas disponibles desde la API</p>
+      </div>
+
+      <section id="peliculas" class="contenedor-peliculas">
+        <p class="mensaje">Cargando películas...</p>
+      </section>
+    </section>
+
+    <section class="bloque bloque-favoritas">
+      <div class="titulo-seccion">
+        <h2>Favoritas</h2>
+        <p>Tus películas guardadas se mantienen al recargar la página</p>
+      </div>
+
+      <section id="favoritas" class="contenedor-peliculas">
+        <p class="mensaje">Todavía no has añadido películas favoritas.</p>
+      </section>
+    </section>
+  </main>
+
+  <script src="recestas.js"></script>
+</body>
+</html>
